@@ -103,7 +103,7 @@ include 'event_data.php';
 				<li><a href="indicators.html" class="visible">Indicators</a></li>
 				<li><a href="accessdata.html" class="visible">Access Data</a></li>
 				<li><a href="tools.html" class="visible">Tools</a></li>
-				<li><a href="events.html" class="visible">Events</a></li>
+				<li><a href="events.php" class="visible">Events</a></li>
 				<li><a href="termsofdatause.html" class="visible">Term of Data Use</a></li>
 				<li><a href="FAQ.html" class="visible">FAQ</a></li>
 			</ul>
@@ -162,26 +162,30 @@ include 'event_data.php';
 		<!-- Footer -->
 		<footer id="footer">
 			<section>
-				<form method="post" action="#">
+				<form method="POST" action="Assets/form.php" id="form">
 					<div class="fields">
 						<div class="field">
 							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<input type="text" name="name" id="name" required />
 						</div>
 						<div class="field">
 							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
+							<input type="email" name="email" id="email" required />
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
+							<textarea name="message" id="message" rows="3" required></textarea>
 						</div>
 					</div>
+					<!-- Error and success messages -->
+					<div class="main-error error d-none" id="error-msg">Error occurred</div>
+					<div class="sent-message d-none" id="sent-msg">Your message has been sent. Thank you!</div>
 					<ul class="actions">
 						<li><input type="submit" value="Send Message" /></li>
 					</ul>
 				</form>
 			</section>
+
 			<section class="split contact">
 				<section class="alt">
 					<h3>Address</h3>
