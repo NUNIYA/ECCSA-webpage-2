@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ECCSA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<style>
+.main-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.faq-section {
+    margin-bottom: 2rem;
+}
+
+.faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 142, 135, 0.1);  
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+
+.faq-section h2:hover {
+    background-color: rgba(0, 142, 135, 0.15);
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 142, 135, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(0, 142, 135, 0.1);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.toggle-icon {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 1.25rem;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    margin-top: 0;
+}
+
+.faq-answer ul {
+    list-style: none;
+    padding-left: 1.2rem;
+}
+
+.faq-answer ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.faq-answer ul li:before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: -1.2rem;
+}
+</style>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Intro -->
+				<div id="intro">
+					<h1>
+						Business Climate Indicators Dashboard <br>
+						BY <br>
+						Ethiopian Business Climate Monitoring System <br>
+					</h1>
+					<p>Bridging the data gap on business climate for evidence –based advocacy and policy decision-making</p>
+					<ul class="actions">
+						<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul>
+				</div>
+
+			<!-- Header -->
+				<header id="header">
+					<img src="images/logo.png" alt="" style="height: auto; width: 100px;">
+				</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html" class= "visible">Home</a></li>
+					<li><a href="about.html"  class= "visible">About</a></li>
+					<li><a href="indicators.html"  class= "visible">Indicators</a></li>
+					<li><a href="accessdata.html" class= "visible">Access Data</a></li>
+					<li><a href="tools.html" class= "visible">Tools</a></li>
+					<li><a href="events.php" class= "visible">Events</a></li>
+					<li><a href="termsofdatause.html" class= "visible">Term of Data Use</a></li>
+					<li><a href="FAQ.html" class= "visible">FAQ</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+			
+				
+
+				<!-- Main -->
+				<div id="main">
+					<h2 class="main-title">Frequently Asked Questions (FAQs)</h2>
+					
+					<section class="faq-section">
+						<h2>General Questions</h2>
+						<div class="faq-container">
+							<div class="faq-item">
+								<div class="faq-question" onclick="toggleAnswer(this)">
+									<h3>1. What is the Ethiopian Business Climate Monitoring System (EBCMS)?</h3>
+									<span class="toggle-icon">+</span>
+								</div>
+								<div class="faq-answer">
+									<p>The EBCMS is a comprehensive platform designed to track and analyze key indicators that impact the business environment in Ethiopia. It provides real-time data and insights to policymakers, investors, and businesses.</p>
+								</div>
+							</div>
+				
+							<div class="faq-item">
+								<div class="faq-question" onclick="toggleAnswer(this)">
+									<h3>2. Who developed the EBCMS?</h3>
+									<span class="toggle-icon">+</span>
+								</div>
+								<div class="faq-answer">
+									<p>The EBCMS was developed by Dart Digital Technologies Plc, in collaboration with Giz.</p>
+								</div>
+							</div>
+				
+							<div class="faq-item">
+								<div class="faq-question" onclick="toggleAnswer(this)">
+									<h3>3. What is the purpose of the EBCMS?</h3>
+									<span class="toggle-icon">+</span>
+								</div>
+								<div class="faq-answer">
+									<p>The primary purpose of the EBCMS is to:</p>
+									<ul>
+										<li>Improve the understanding of the business climate in Ethiopia</li>
+										<li>Identify challenges and opportunities</li>
+										<li>Inform policy decisions and business strategies</li>
+										<li>Attract domestic and foreign investment</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				
+					<section class="faq-section">
+						<h2>Data and Indicators</h2>
+						<div class="faq-container">
+							<div class="faq-item">
+								<div class="faq-question" onclick="toggleAnswer(this)">
+									<h3>4. What kind of data does the EBCMS collect?</h3>
+									<span class="toggle-icon">+</span>
+								</div>
+								<div class="faq-answer">
+									<p>The EBCMS collects a wide range of data on various business climate indicators, including:</p>
+									<ul>
+										<li>Ease of doing business</li>
+										<li>Investment climate</li>
+										<li>Regulatory environment</li>
+										<li>Infrastructure development</li>
+										<li>Access to finance</li>
+										<li>Labor market conditions</li>
+										<li>Trade policies</li>
+									</ul>
+								</div>
+							</div>
+				
+							<div class="faq-item">
+								<div class="faq-question" onclick="toggleAnswer(this)">
+									<h3>5. How often is the data updated?</h3>
+									<span class="toggle-icon">+</span>
+								</div>
+								<div class="faq-answer">
+									<p>The data is updated regularly, typically [Frequency, e.g., daily, weekly, monthly, quarterly, annually].</p>
+								</div>
+							</div>
+				
+							<div class="faq-item">
+								<div class="faq-question" onclick="toggleAnswer(this)">
+									<h3>6. Where does the data come from?</h3>
+									<span class="toggle-icon">+</span>
+								</div>
+								<div class="faq-answer">
+									<p>The data is sourced from various reliable sources, including:</p>
+									<ul>
+										<li>Government agencies</li>
+										<li>International organizations</li>
+										<li>Private sector surveys</li>
+										<li>Statistical agencies</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				
+					
+    <section class="faq-section">
+        <h2>Access and Usage</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>7. How can I access the data and insights from the EBCMS?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can access the data and insights through the EBCMS website or by contacting the [Relevant Organization].</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>8. Is there a fee for accessing the data and insights from the EBCMS?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Access to the EBCMS and its data is generally free of charge. However, there may be specific fees associated with certain data products or services.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>9. How can I provide feedback or suggestions for improving the EBCMS?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can provide feedback by contacting the relevant government agencies or by using the feedback channels provided on the EBCMS website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Technical Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>10. What technology is used to power the EBCMS?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The EBCMS utilizes advanced data analytics and visualization tools to process and present the data.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>11. How is data security ensured?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The EBCMS employs robust security measures to protect the confidentiality and integrity of the data.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>12. Can I customize the data and reports to suit my specific needs?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Specify the level of customization available, such as filtering data or generating custom reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+				</div>
+						  
+				<script>
+					function toggleAnswer(element) {
+    const answer = element.nextElementSibling;
+    const icon = element.querySelector('.toggle-icon');
+    
+    // Toggle the active class
+    answer.classList.toggle('active');
+    
+    // Update the icon
+    if (answer.classList.contains('active')) {
+        icon.textContent = '-';
+    } else {
+        icon.textContent = '+';
+    }
+}
+				</script>
+						  
+<!-- Footer -->
+<footer id="footer">
+	<section>
+		<form method="POST" action="Assets/php/form.php" id="form">
+		  <div class="fields">
+			<div class="field">
+			  <label for="name">Name</label>
+			  <input type="text" name="name" id="name" required />
+			</div>
+			<div class="field">
+			  <label for="email">Email</label>
+			  <input type="email" name="email" id="email" required />
+			</div>
+			<div class="field">
+			  <label for="message">Message</label>
+			  <textarea name="message" id="message" rows="3" required></textarea>
+			</div>
+		  </div>
+		  <!-- Error and success messages -->
+		  <div class="main-error error d-none" id="error-msg">Error occurred</div>
+		  <div class="sent-message d-none" id="sent-msg">Your message has been sent. Thank you!</div>
+		  <ul class="actions">
+			<li><input type="submit" value="Send Message" /></li>
+		  </ul>
+		</form>
+	  </section>
+	  
+	<section class="split contact">
+		<section class="alt">
+			<h3>Address</h3>
+			<p>| MEXICO SQUARE |ADDIS ABABA | ETHIOPIA | </p>
+		</section>
+		<section>
+			<h3>Phone</h3>
+			<p><a href="#">+ 251 115 514 005 </a></p>
+		</section>
+		<section>
+			<h3>Email</h3>
+			<p><a href="#">INFO@ETHIOPIANCHAMBER.COM
+			</a></p>
+		</section>
+		<section>
+			<h3>Social</h3>
+			<ul class="icons alt">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</section>
+	</section>
+</footer>
+
+<!-- Copyright -->
+<div id="copyright">
+	<ul><li>&copy; </li><li>Designed by: <a href="https://dartdigitaltech.com/"> Dart Digital Technologies PLC</a></li></ul>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
