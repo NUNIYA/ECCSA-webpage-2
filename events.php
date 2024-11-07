@@ -127,17 +127,19 @@ include 'event_data.php';
 			<p>
 				We invite you to the official launch of the Ethiopian Business Climate Monitoring System (EBCMS). This groundbreaking initiative aims to enhance the business climate in Ethiopia by providing data-driven insights and policy recommendations.
 			</p>
-			<div>
-				<p>
-					Event Highlights:
-				</p>
-				<ul>
-					<li>Keynote Address by ------------</li>
-					<li>In-depth Presentation on the EBCMS features and benefits</li>
-					<li>Panel Discussion with industry experts</li>
-					<li>Live Demonstration of the EBCMS platform</li>
-					<li>Networking Opportunities with key stakeholders</li>
-				</ul>
+			<div class="container d-flex justify-content-center my-4">
+				<div class="card shadow p-4" style="width: 800px;">
+					<div class="card-body">
+						<h3 class="card-title">Event Highlights:</h3>
+						<ul class="custom-list">
+							<li>Keynote Address by ------------</li>
+							<li>In-depth Presentation on the EBCMS features and benefits</li>
+							<li>Panel Discussion with industry experts</li>
+							<li>Live Demonstration of the EBCMS platform</li>
+							<li>Networking Opportunities with key stakeholders</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="event-container">
 				<?php foreach ($events as $event): ?>

@@ -26,10 +26,7 @@
 						</ul>
 					</div>
 
-				<!-- Header -->
-					<header id="header">
-						<img src="images/logo.png" alt="" style="height: auto; width: 100px;">
-					</header>
+				
 
 				<!-- Nav -->
 				<nav id="nav">
@@ -70,27 +67,27 @@
    <footer id="footer">
 	<section>
 		<form method="POST" action="Assets/form.php" id="form">
-		  <div class="fields">
-			<div class="field">
-			  <label for="name">Name</label>
-			  <input type="text" name="name" id="name" required />
-			</div>
-			<div class="field">
-			  <label for="email">Email</label>
-			  <input type="email" name="email" id="email" required />
-			</div>
-			<div class="field">
-			  <label for="message">Message</label>
-			  <textarea name="message" id="message" rows="3" required></textarea>
-			</div>
-		  </div>
-		  <!-- Error and success messages -->
-		  <div class="main-error error d-none" id="error-msg">Error occurred</div>
-		  <div class="sent-message d-none" id="sent-msg">Your message has been sent. Thank you!</div>
-		  <ul class="actions">
-			<li><input type="submit" value="Send Message" /></li>
-		  </ul>
-		</form>
+            <div class="fields">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required style="color: black;" />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required style="color: black;" />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="3" required style="color: black;"></textarea>
+                </div>
+            </div>
+            <!-- Error and success messages -->
+            <div class="main-error error d-none" id="error-msg">Error occurred</div>
+            <div class="sent-message d-none" id="sent-msg">Your message has been sent. Thank you!</div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" /></li>
+            </ul>
+        </form>
 	  </section>
 	  
 	<section class="split contact">
